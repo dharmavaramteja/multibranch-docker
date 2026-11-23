@@ -24,7 +24,7 @@ pipeline {
         
         stage ("Deploy") {
             steps {
-                sh 'docker run -itd --name movie-app1 -p 3333:80 dharmavaramteja/paytm:movie'
+                sh 'docker run -itd --name movie-app -p 3333:80 dharmavaramteja/paytm:movie'
             }
         }
     }
